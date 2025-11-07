@@ -1267,27 +1267,27 @@
         {
           title: "Flex Abastece",
           desc: "Cartão com vantagens exclusivas",
-          link: "https://cliente.flexgrupo.com/FLX/open.do?action=open&sys=FLX",
+          link: "https://www.flexgrupo.com/solucoes/flex-abastece",
         },
         {
           title: "Flex Completa",
           desc: "Software para gestão de abastecimento",
-          link: "https://cliente.flexgrupo.com/FLX/open.do?action=open&sys=FLX",
+          link: "https://www.flexgrupo.com/solucoes/flex-completa",
         },
         {
           title: "Flex Monitora",
           desc: "Monitoramento e rastreamento em tempo real",
-          link: "https://portal.flexgrupo.com/#/",
+          link: "https://www.flexgrupo.com/solucoes/flex-monitora",
         },
         {
           title: "Flex Elétrico",
           desc: "O futuro da mobilidade",
-          link: "https://portal.flexgrupo.com/#/",
+          link: "https://www.flexgrupo.com/solucoes/flex-eletrico",
         },
         {
           title: "Flex Move",
           desc: "Tag nos veículos da frota",
-          link: "https://portal.flexgrupo.com/#/",
+          link: "https://www.flexgrupo.com/solucoes/flex-move",
         },
       ];
 
@@ -1314,14 +1314,14 @@
         document.getElementById("current-slide").textContent = currentSlide + 1;
 
         // Update description
-        document.getElementById("slide-title").textContent =
-          slides[currentSlide].title;
-        document.getElementById("slide-desc").textContent =
-          slides[currentSlide].desc;
+        // document.getElementById("slide-title").textContent =
+        //   slides[currentSlide].title;
+        // document.getElementById("slide-desc").textContent =
+        //   slides[currentSlide].desc;
 
         // Update link
-        document.getElementById("carousel-link").href =
-          slides[currentSlide].link;
+        const link = document.getElementById("carousel-link");
+        link.href = slides[currentSlide].link;
       }
 
       function nextSlide() {
